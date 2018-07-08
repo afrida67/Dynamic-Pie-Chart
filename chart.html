@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link href="chart.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+</head>
+<body>
+<form action="save.php" method="POST">
+
+ <div class="container">
+        <canvas id="chart"  width="290" height="90" ></canvas>
+
+      Enter Label<br>
+	<input type="text" name="label" id="title"/>
+	<br><br/>
+
+        Enter Value<br>
+	<input type="text" name="val" id="value"/>
+	<br><br/>
+
+
+        <input type="submit" value="Add label" onclick="addtoChart();" />
+    <!--    <input type="button" value="Remove label" onclick="removefromChart();" />-->
+</form> 
+
+<form action="removeData.php" method="POST">
+
+        <input type="submit" value="Remove label" onclick="removefromChart();" />
+
+</form>
+
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="chart2.js"></script>
+</body>
+</html>
