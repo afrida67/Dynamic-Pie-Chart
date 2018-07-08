@@ -47,6 +47,27 @@ $.getJSON("data.json", function(data) {
 
 
     }
+    
+    window.updateChart = function(){
+
+        /* this will update the index 2 with new value and label*/
+
+      //    chart.config.data.datasets[0].data[2] = 17;
+       //   chart.config.data.labels[2] = "newlyAdded";
+       //   chart.update();
+
+          /*input taken*/
+        //  chart.config.data.datasets[0].data[2] = Number(document.getElementById('nValue').value);
+      //    chart.config.data.labels[2] = document.getElementById('nTitle').value;
+       //   chart.update();
+
+     /*compare label to update existing label's value*/ 
+  if((document.getElementById('title').value) == (document.getElementById('nTitle').value)){
+      chart.config.data.datasets[0].data(Number(document.getElementById('value').value)) = Number(document.getElementById('nValue').value);
+      chart.update();
+     }
+       
+  }
 
  });
  
