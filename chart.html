@@ -30,7 +30,7 @@
 
         <form action="removeData.php" method="POST">
 
-                <input type="submit" value="Remove label" onclick="removefromChart();" />
+                <input type="submit" value="Remove the last label" onclick="removefromChart();" />
                  <br><br/>
         </form>
 
@@ -49,8 +49,18 @@
                        
         </form> 
 
-</div>
+        <form action="popspecific.php" method="POST">
 
+                        Enter the Label U want to Remove<br>
+                        <input type="text" name="label" id="title"/>
+                        <br><br/>
+                                                      
+                        <input type="submit" value="Pop label" />
+                        <br><br/>
+                               
+        </form> 
+
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
