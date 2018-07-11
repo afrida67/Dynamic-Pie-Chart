@@ -1,22 +1,17 @@
 [
     {
         "label": "aa",
-        "val": "12"
+        "val": "23",
+        "color": "#1E88E5"
     },
     {
         "label": "vv",
-        "val": "15"
-    },
-    {
-        "label": "bb",
-        "val": "12"
-    },
-    {
-        "label": "new",
-        "val": "16"
+        "val": "15",
+        "color": "#D50000"
     },
     {
         "label": "rr",
-        "val": "33"
+        "val": "13",
+        "color": "#EEFF41"
     }
 ]

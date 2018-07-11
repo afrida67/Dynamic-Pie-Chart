@@ -20,7 +20,9 @@
         Enter Value<br>
 	<input type="text" name="val" id="value"/>
 
-        <input type="submit" value="Add label" onclick="addtoChart();" />
+        Pick a Color <input type="color" name="color" id="color"><br /><br />
+
+        <input type="submit" value="Add New Label" onclick="addtoChart(); processData('color');"/>
 
         <br><br/>
 
@@ -34,21 +36,18 @@
 
         <form action="compare.php" method="POST">
 
-              
+                Update Label<br>
+                <input type="text" name="label" id="title"/>
+                <br><br/>
                        
-                             Update Label<br>
-                               <input type="text" name="label" id="title"/>
-                               <br><br/>
+                Update Value<br>
+                <input type="text" name="val" id="value"/>
+                <br><br/>
+                                              
+                <input type="submit" value="Update label" />
+                <br><br/>
                        
-                               Update Value<br>
-                               <input type="text" name="val" id="value"/>
-                               <br><br/>
-                       
-                       
-                               <input type="submit" value="Update label" />
-                               <br><br/>
-                       
- </form> 
+        </form> 
 
 </div>
 

@@ -10,7 +10,8 @@
 	   //Get form data
 	   $formdata = array(
           'label'=> $_POST['label'],
-          'val' => $_POST['val']
+		  'val' => $_POST['val'],
+		  'color' => $_POST['color'],
 	   );
 
 	   //Get data from existing json file
